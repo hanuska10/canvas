@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- <link rel="stylesheet" href="https://ux.ed.team/css/styles.css?201803301710"> -->
+    <title>Document</title>
+    <style>
+        .page.content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        canvas {
+            margin-left: 30px;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .buttons button {
+            margin: 10px;
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Canvas</h1>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Titulo</span>
+                <div class="mdl-layout-spacer"></div>
+                <!-- NAVEGACIÓN -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a href="uno.html" class="mdl-navigation__link">Módulo 1</a>
+                    <a href="dos.html" class="mdl-navigation__link">Módulo 2</a>
+                    <a href="tres.html" class="mdl-navigation__link">Módulo 3</a>
+                    <a href="cuatro.html" class="mdl-navigation__link">Módulo 4</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Titulo</span>
+            <nav class="mdl-navigation">
+                <a href="uno.html" class="mdl-navigation__link">Módulo 1</a>
+                <a href="dos.html" class="mdl-navigation__link">Módulo 2</a>
+                <a href="tres.html" class="mdl-navigation__link">Módulo 3</a>
+                <a href="cuatro.html" class="mdl-navigation__link">Módulo 4</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="buttons">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        id="createLines">Crear línea</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        id="createArco">Crear arco</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        id="createcuadrado">Crear cuadrado</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        id="createCurvas">Crear curvas</button>
+                </div>
+                <canvas id="canvas" class="" width="" height=""></canvas>
+                <canvas id="face" class="" width="" height=""></canvas>
+                <canvas id="square" class="" width="" height=""></canvas>
+                <canvas id="curvas" class="" width="400" height="400"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
